@@ -35,13 +35,10 @@ public class MyScheduleFragment extends Fragment
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.raspored_fragment,container,false);
+        View view = inflater.inflate(R.layout.my_schedule_fragment,container,false);
 
-        test();
-
-        lecture_RecyclerView = view.getRootView().findViewById(R.id.sa_list);
-        Classroom classroom = new Classroom("Kolarac");
-        Group group = new Group("308");
+        lecture_RecyclerView = view.getRootView().findViewById(R.id.my_schedule_fragment_recycler_view);
+        Group group = manager.getGroupByString("306");
         lectureList = manager.getLecturesByGroup(group);
         lectureAdapter = new LectureAdapter(view.getContext(), lectureList);
 
@@ -52,16 +49,5 @@ public class MyScheduleFragment extends Fragment
         lecture_RecyclerView.setAdapter(lectureAdapter);
 
         return view;
-    }
-
-    private void test(){
-        URLConnector testConn = new URLConnector();
-        JSONArray arr = testConn.getResponseJSONArray();
-        MyJSONParser parser = new MyJSONParser();
-        parser.parseDataToManager(arr);
-
-        for (Classroom c : manager.getClassrooms()){
-            Log.d("TESTIRAM CLASSROOM", "CLASSROOM: "+ c.getName());
-        }
     }
 }

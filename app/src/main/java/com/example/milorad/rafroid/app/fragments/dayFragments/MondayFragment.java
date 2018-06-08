@@ -1,4 +1,4 @@
-package com.example.milorad.rafroid.app.fragments;
+package com.example.milorad.rafroid.app.fragments.dayFragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,13 +17,14 @@ import com.example.milorad.rafroid.data.Manager;
 import com.example.milorad.rafroid.data.dataInterface.MyJSONParser;
 import com.example.milorad.rafroid.data.dataInterface.URLConnector;
 import com.example.milorad.rafroid.data.model.Classroom;
+import com.example.milorad.rafroid.data.model.DAY;
 import com.example.milorad.rafroid.data.model.Lecture;
 
 import org.json.JSONArray;
 
 import java.util.List;
 
-public class SearchFragment extends Fragment
+public class MondayFragment extends Fragment
 {
     private static final String TAG = "MyScheduleFragment";
     private RecyclerView lecture_RecyclerView;
@@ -34,10 +35,10 @@ public class SearchFragment extends Fragment
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.search_fragment,container,false);
+        View view = inflater.inflate(R.layout.day_fragment,container,false);
 
-        lecture_RecyclerView = view.getRootView().findViewById(R.id.search_recycler_view);
-        lectureList = manager.getLectures();
+        lecture_RecyclerView = view.getRootView().findViewById(R.id.day_recycler_view);
+        lectureList = manager.getLecturesByDay(DAY.MON);
         lectureAdapter = new LectureAdapter(view.getContext(), lectureList);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(view.getContext());
@@ -48,5 +49,4 @@ public class SearchFragment extends Fragment
 
         return view;
     }
-
 }

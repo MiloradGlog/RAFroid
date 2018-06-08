@@ -11,6 +11,11 @@ import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.app.fragments.MyScheduleFragment;
 import com.example.milorad.rafroid.app.adapters.SectionsPageAdapter;
 import com.example.milorad.rafroid.app.fragments.SearchFragment;
+import com.example.milorad.rafroid.app.fragments.dayFragments.FridayFragment;
+import com.example.milorad.rafroid.app.fragments.dayFragments.MondayFragment;
+import com.example.milorad.rafroid.app.fragments.dayFragments.ThursdayFragment;
+import com.example.milorad.rafroid.app.fragments.dayFragments.TuesdayFragment;
+import com.example.milorad.rafroid.app.fragments.dayFragments.WednesdayFragment;
 import com.example.milorad.rafroid.data.dataInterface.MyJSONParser;
 import com.example.milorad.rafroid.data.dataInterface.URLConnector;
 import com.example.milorad.rafroid.data.Manager;
@@ -78,6 +83,12 @@ public class MainActivity extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new MyScheduleFragment(), "Moj Raspored");
         adapter.addFragment(new SearchFragment(), "Pretraga Rasporeda");
+
+        adapter.addFragment(new MondayFragment(), "Ponedeljak");
+        adapter.addFragment(new TuesdayFragment(), "Utorak");
+        adapter.addFragment(new WednesdayFragment(), "Sreda");
+        adapter.addFragment(new ThursdayFragment(), "Cetvrtak");
+        adapter.addFragment(new FridayFragment(), "Petak");
         viewPager.setAdapter(adapter);
     }
 
