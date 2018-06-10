@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
+            "outputFile": "E:\\Projekti\\Android\\RAFroid\\RAFroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\values-fi\\values-fi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,1850",
-                        "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
-                        "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,1925"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\5c67e89be0abc7ffae7c2064a3c8341e\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\Milorad\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\05e877f95803a0202392d731166500a2\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1930",
                         "endColumns": "100",
                         "endOffsets": "2026"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Milorad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\9ac5a3ede2217c566afb8b537ca7e26b\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,1850",
+                        "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
+                        "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,1925"
                     }
                 }
             ]

@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+            "outputFile": "E:\\Projekti\\Android\\RAFroid\\RAFroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\values-mk\\values-mk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,213,317,425,511,616,735,818,900,987,1093,1200,1301,1408,1519,1623,1779,1877",
-                        "endColumns": "107,103,107,85,104,118,82,81,86,105,106,100,106,110,103,155,97,83",
-                        "endOffsets": "208,312,420,506,611,730,813,895,982,1088,1195,1296,1403,1514,1618,1774,1872,1956"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\5c67e89be0abc7ffae7c2064a3c8341e\\res\\values-mk\\values-mk.xml",
+                    "source": "C:\\Users\\Milorad\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\05e877f95803a0202392d731166500a2\\res\\values-mk\\values-mk.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1961",
                         "endColumns": "100",
                         "endOffsets": "2057"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Milorad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\9ac5a3ede2217c566afb8b537ca7e26b\\res\\values-mk\\values-mk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,317,425,511,616,735,818,900,987,1093,1200,1301,1408,1519,1623,1779,1877",
+                        "endColumns": "107,103,107,85,104,118,82,81,86,105,106,100,106,110,103,155,97,83",
+                        "endOffsets": "208,312,420,506,611,730,813,895,982,1088,1195,1296,1403,1514,1618,1774,1872,1956"
                     }
                 }
             ]
