@@ -1,0 +1,130 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1b0349c1718d8c719ce4564939808b69\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\37062a2ddb1f209a177d5a674f9921a7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\70bc41fadd1dd8465807e58b7e8af854\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\361a66de76a924114ec09b3dc4479537\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\07b7acab8e73830a6571fc118d5c9808\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\33e94871d1caefbf2558de87f9ec7b48\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\27dcaae7ad4dd15d37c25a3fac33f21d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\204270fb9a2f8800be0e4a348a1c5f4a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\71f6ee7c144ee8e21936c48de2f63a03\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\ec656605f34c7fc3e35e2ecf7a58b863\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\651e04e4af4b4abb3bf38d91f34939e6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\2f5e88075eb3e48d8aafb6a3dcfc7a1e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\5c67e89be0abc7ffae7c2064a3c8341e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d2b58097ea08e525c949eaf94f3e5c2f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\45389d42495b32b54cd4d90d0b52d4ac\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d6793cb155072395f49c44b5f1f87d4f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1f560f9e01e9c818e9dd4a91065af8fb\AndroidManifest.xml:17:1-22:12
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:7:5-25:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\70bc41fadd1dd8465807e58b7e8af854\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\70bc41fadd1dd8465807e58b7e8af854\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:13:9-40
+activity#com.example.milorad.rafroid.app.MainActivity
+ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:14:9-24:20
+	android:label
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:16:13-57
+	android:theme
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:17:13-56
+	android:name
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:15:13-45
+intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.SEARCH+category:name:android.intent.category.LAUNCHER
+ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:18:13-23:29
+action#android.intent.action.MAIN
+ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:20:27-74
+action#android.intent.action.SEARCH
+ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:21:17-70
+	android:name
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:21:25-68
+uses-sdk
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1b0349c1718d8c719ce4564939808b69\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1b0349c1718d8c719ce4564939808b69\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\37062a2ddb1f209a177d5a674f9921a7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\37062a2ddb1f209a177d5a674f9921a7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\70bc41fadd1dd8465807e58b7e8af854\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\70bc41fadd1dd8465807e58b7e8af854\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\361a66de76a924114ec09b3dc4479537\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\361a66de76a924114ec09b3dc4479537\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\07b7acab8e73830a6571fc118d5c9808\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\07b7acab8e73830a6571fc118d5c9808\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\33e94871d1caefbf2558de87f9ec7b48\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\33e94871d1caefbf2558de87f9ec7b48\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\27dcaae7ad4dd15d37c25a3fac33f21d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\27dcaae7ad4dd15d37c25a3fac33f21d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\204270fb9a2f8800be0e4a348a1c5f4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\204270fb9a2f8800be0e4a348a1c5f4a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\71f6ee7c144ee8e21936c48de2f63a03\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\71f6ee7c144ee8e21936c48de2f63a03\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\ec656605f34c7fc3e35e2ecf7a58b863\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\ec656605f34c7fc3e35e2ecf7a58b863\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\651e04e4af4b4abb3bf38d91f34939e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\651e04e4af4b4abb3bf38d91f34939e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\2f5e88075eb3e48d8aafb6a3dcfc7a1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\2f5e88075eb3e48d8aafb6a3dcfc7a1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\5c67e89be0abc7ffae7c2064a3c8341e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\5c67e89be0abc7ffae7c2064a3c8341e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d2b58097ea08e525c949eaf94f3e5c2f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\d2b58097ea08e525c949eaf94f3e5c2f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\45389d42495b32b54cd4d90d0b52d4ac\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\45389d42495b32b54cd4d90d0b52d4ac\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d6793cb155072395f49c44b5f1f87d4f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d6793cb155072395f49c44b5f1f87d4f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1f560f9e01e9c818e9dd4a91065af8fb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\MazZa\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1f560f9e01e9c818e9dd4a91065af8fb\AndroidManifest.xml:20:5-44
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml

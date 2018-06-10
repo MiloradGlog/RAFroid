@@ -103,15 +103,15 @@ public class MyJSONParser {
     private DAY parseDay(String dayString){
         switch (dayString){
             case ("PON"):{
-                return DAY.MON;
+                return DAY.PON;
             }case ("UTO"):{
-                return DAY.TUE;
+                return DAY.UTO;
             }case ("SRE"):{
-                return DAY.WED;
+                return DAY.SRE;
             }case ("?ET"):{
-                return DAY.THU;
+                return DAY.ČET;
             }case ("PET"):{
-                return DAY.FRI;
+                return DAY.PET;
             }
         }
         Log.e("PARSE DAY ERROR", "FOLLOWING STRING WAS NOT PARSED CORRECTLY: "+ dayString);

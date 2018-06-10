@@ -1,21 +1,26 @@
 package com.example.milorad.rafroid.app;
 
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.app.fragments.MyScheduleFragment;
 import com.example.milorad.rafroid.app.adapters.SectionsPageAdapter;
 import com.example.milorad.rafroid.app.fragments.SearchFragment;
-import com.example.milorad.rafroid.app.fragments.dayFragments.FridayFragment;
-import com.example.milorad.rafroid.app.fragments.dayFragments.MondayFragment;
-import com.example.milorad.rafroid.app.fragments.dayFragments.ThursdayFragment;
-import com.example.milorad.rafroid.app.fragments.dayFragments.TuesdayFragment;
-import com.example.milorad.rafroid.app.fragments.dayFragments.WednesdayFragment;
 import com.example.milorad.rafroid.data.dataInterface.MyJSONParser;
 import com.example.milorad.rafroid.data.dataInterface.URLConnector;
 import com.example.milorad.rafroid.data.Manager;
@@ -34,11 +39,35 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private SectionsPageAdapter mSectionsPageAdapter;
     private ViewPager mviewPager;
+    private NavigationView navigationView;
+    private DrawerLayout drawerLayout;
+    private ActionBarDrawerToggle actionBarDrawerToggle;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        toolbar = (Toolbar) findViewById(R.id.main_page_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(null);
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(MainActivity.this, drawerLayout, R.string.drawer_open, R.string.drawer_close);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        navigationView = findViewById(R.id.nav_view);
+        View navView = navigationView.inflateHeaderView(R.layout.navigation_header);
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                menuSelector(item);
+                return false;
+            }
+        });
 
         mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
         mviewPager = (ViewPager) findViewById(R.id.container);
@@ -48,6 +77,15 @@ public class MainActivity extends AppCompatActivity {
 
         test();
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(actionBarDrawerToggle.onOptionsItemSelected(item)){
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private void test(){
@@ -73,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d("TESTIRAM SUBJECTE", "SUBJECT: " + s.getName());
         }
 
-        for (Lecture l : manager.getLecturesByDay(DAY.MON)){
+        for (Lecture l : manager.getLecturesByDay(DAY.PON)){
             Log.d("TESTIRAM API", "LECTURES:\n"+ l.toString());
         }
     }
@@ -83,14 +121,27 @@ public class MainActivity extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new MyScheduleFragment(), "Moj Raspored");
         adapter.addFragment(new SearchFragment(), "Pretraga Rasporeda");
-
-        adapter.addFragment(new MondayFragment(), "Ponedeljak");
-        adapter.addFragment(new TuesdayFragment(), "Utorak");
-        adapter.addFragment(new WednesdayFragment(), "Sreda");
-        adapter.addFragment(new ThursdayFragment(), "Cetvrtak");
-        adapter.addFragment(new FridayFragment(), "Petak");
         viewPager.setAdapter(adapter);
     }
 
+    private void menuSelector(MenuItem item){
+
+        switch (item.getItemId()){
+            case R.id.nav_raspored:
+                Toast.makeText(this, "Raspored", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_vesti:
+                Toast.makeText(this, "Vesti", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.nav_konsultacije:
+                Toast.makeText(this, "Konsultacije", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.nav_opcije:
+                Toast.makeText(this, "Opcije", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+    }
 
 }

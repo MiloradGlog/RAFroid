@@ -38,7 +38,7 @@ public class ThursdayFragment extends Fragment
         View view = inflater.inflate(R.layout.day_fragment,container,false);
 
         lecture_RecyclerView = view.getRootView().findViewById(R.id.day_recycler_view);
-        lectureList = manager.getLecturesByDay(DAY.THU);
+        lectureList = manager.getLecturesByDay(DAY.ČET);
         lectureAdapter = new LectureAdapter(view.getContext(), lectureList);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(view.getContext());

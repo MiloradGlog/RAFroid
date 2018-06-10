@@ -1,12 +1,14 @@
 package com.example.milorad.rafroid.data.model;
 
+import android.support.v7.widget.util.SortedListAdapterCallback;
+
 import java.util.ArrayList;
 
 /**
  * Created by Milorad on 6/2/2018.
  */
 
-public class Lecture {
+public class Lecture{
 
     private Subject subject;
     private Lecturer lecturer;
@@ -30,8 +32,8 @@ public class Lecture {
     }
 
 
-    public boolean hasLecturer(Lecturer l){
-        if (lecturer.equals(l)){
+    public boolean hasLecturer(String l){
+        if (lecturer.getName().toLowerCase().contains(l.toLowerCase())){
             return true;
         }
         else {
@@ -39,8 +41,8 @@ public class Lecture {
         }
     }
 
-    public boolean hasDay(DAY d){
-        if (this.day == d){
+    public boolean hasDay(String d){
+        if (this.day != null && this.day.toString().toLowerCase().contains(d.toLowerCase())){
             return true;
         }
         else {
@@ -48,9 +50,9 @@ public class Lecture {
         }
     }
 
-    public boolean hasGroup(Group g){
+    public boolean hasGroup(String g){
         for (Group gr : groups){
-            if(gr.getName().equals(g.getName())){
+            if(gr.getName().toLowerCase().contains(g.toLowerCase())){
                 return true;
             }
             else {
@@ -60,8 +62,8 @@ public class Lecture {
         return false;
     }
 
-    public boolean hasSubject(Subject s){
-        if (subject.equals(s)){
+    public boolean hasSubject(String s){
+        if (subject.getName().toLowerCase().contains(s.toLowerCase())){
             return true;
         }
         else {
@@ -69,11 +71,20 @@ public class Lecture {
         }
     }
 
-    public boolean hasClassroom(Classroom c){
-        if (classroom.getName().equals(c.getName())){
+    public boolean hasClassroom(String c){
+        if (classroom.getName().toLowerCase().contains(c.toLowerCase())){
             return true;
         }
         else {
+            return false;
+        }
+    }
+
+    public boolean hasLectureByText(String searchQuery){
+        if(this.subject.getName().contains(searchQuery)){
+            return true;
+        }
+        else{
             return false;
         }
     }
@@ -95,6 +106,24 @@ public class Lecture {
 
     public ArrayList<Group> getGroups() {
         return groups;
+    }
+
+    public String getGroupsString(){
+        if(groups != null){
+            String groupsString = "";
+            for(int i = 0; i < groups.size(); i++){
+                if(i == groups.size() - 1){
+                    groupsString += groups.get(i).getName();
+                }
+                else{
+                    groupsString += groups.get(i).getName() + ", ";
+                }
+            }
+            return groupsString;
+        }
+        else {
+            return "Nema grupa";
+        }
     }
 
     public String getType() {

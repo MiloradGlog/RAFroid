@@ -9,16 +9,19 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"
-        android:layout_marginBottom="1dp"
-        android:layout_marginHorizontal="1.5dp">
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="1.5dp"
+        android:layout_marginEnd="1.5dp"
+        >
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight=".85"
             android:orientation="vertical"
-            android:paddingLeft="3dp"
-            android:background="@color/itemBackground">
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:background="@drawable/customshapeleft">
 
             <TextView
                 android:id="@+id/sp_lectureName"
@@ -43,21 +46,19 @@
 
                 <TextView
                     android:id="@+id/sp_lectureClassroom"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:textColor="@color/grey"
-                    android:text="Ucionica 6"
-                    android:layout_weight=".50"/>
+                    android:text="Ucionica 6"/>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight=".50"
-                    android:gravity="right"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp">
+                    android:gravity="start"
+                    android:layout_marginEnd="10dp">
 
                     <ImageView
                         android:id="@+id/sp_iconLecturer"
@@ -82,15 +83,14 @@
         <View
             android:layout_width="1.5dp"
             android:layout_height="match_parent"
-            android:background="@color/black"/>
+            android:background="@color/colorPrimary"/>
 
         <LinearLayout
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center_horizontal"
-            android:paddingLeft="2dp"
-            android:background="@color/timeBackground">
+            android:gravity="center"
+            android:background="@drawable/customshapetopright">
 
             <TextView
                 android:id="@+id/sp_day"
@@ -98,15 +98,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:text="PON"
-                android:layout_marginTop="2dp"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1.5dp"
-                android:background="@color/black"
-                android:layout_marginLeft="2.5dp"
-                android:layout_marginRight="3.5dp"/>
+                android:text="PON"/>
 
             <TextView
                 android:id="@+id/sp_startTime"
@@ -123,7 +115,6 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                android:layout_marginTop="2dp"
                 android:text="14:00"/>
 
         </LinearLayout>

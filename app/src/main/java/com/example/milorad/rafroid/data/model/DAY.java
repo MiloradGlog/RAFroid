@@ -5,5 +5,5 @@ package com.example.milorad.rafroid.data.model;
  */
 
 public enum DAY {
-    MON, TUE, WED, THU, FRI
+    PON, UTO, SRE, ČET, PET
 }

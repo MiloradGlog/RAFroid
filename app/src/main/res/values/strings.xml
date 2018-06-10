@@ -4,6 +4,26 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Tab 3</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
     <string name="action_settings">Settings</string>
+    <string name="nav_title">Računarski fakultet</string>
+    <string name="queryHint">Pretraga</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    
+    //-------------NAV MENU-----------------------
+    <string name="nav_schedule">Raspored</string>
+    <string name="nav_news">Vesti</string>
+    <string name="nav_consultations">Konsultacije</string>
+    <string name="nav_settings">Opcije</string>
+    //--------------------------------------------
+    
+    <string-array name="vrstaPretrage">
+        <item>Predmet</item>
+        <item>Grupa</item>
+        <item>Profesor</item>
+        <item>Ucionica</item>
+        <item>Dan</item>
+        <item>Tip nastave</item>
+    </string-array>
 </resources>

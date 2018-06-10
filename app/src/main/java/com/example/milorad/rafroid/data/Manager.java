@@ -54,7 +54,7 @@ public class Manager {
     public ArrayList<Lecture> getLecturesByLecturer(Lecturer lecturer){
         ArrayList<Lecture> list = new ArrayList<Lecture>();
         for (Lecture l : lectures){
-            if (l.hasLecturer(lecturer)) list.add(l);
+            if (l.hasLecturer(lecturer.getName())) list.add(l);
         }
         return list;
     }
@@ -67,7 +67,7 @@ public class Manager {
     public ArrayList<Lecture> getLecturesByGroup(Group group){
         ArrayList<Lecture> list = new ArrayList<Lecture>();
         for (Lecture l : lectures){
-            if (l.hasGroup(group)) list.add(l);
+            if (l.hasGroup(group.getName())) list.add(l);
         }
         return list;
     }
@@ -79,7 +79,7 @@ public class Manager {
     public ArrayList<Lecture> getLecturesBySubject(Subject subject){
         ArrayList<Lecture> list = new ArrayList<Lecture>();
         for (Lecture l : lectures){
-            if (l.hasSubject(subject)) list.add(l);
+            if (l.hasSubject(subject.getName())) list.add(l);
         }
         return list;
     }
@@ -91,7 +91,7 @@ public class Manager {
     public ArrayList<Lecture> getLecturesByDay(DAY day){
         ArrayList<Lecture> list = new ArrayList<Lecture>();
         for (Lecture l : lectures){
-            if (l.hasDay(day)) list.add(l);
+            if (l.hasDay(day.toString())) list.add(l);
         }
         return list;
     }
@@ -103,7 +103,7 @@ public class Manager {
     public ArrayList<Lecture> getLecturesByClassroom(Classroom classroom){
         ArrayList<Lecture> list = new ArrayList<Lecture>();
         for (Lecture l : lectures){
-            if (l.hasClassroom(classroom)) list.add(l);
+            if (l.hasClassroom(classroom.getName())) list.add(l);
         }
         return list;
     }

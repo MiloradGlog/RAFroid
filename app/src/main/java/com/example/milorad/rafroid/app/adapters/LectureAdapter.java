@@ -2,16 +2,21 @@ package com.example.milorad.rafroid.app.adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v7.util.SortedList;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 
 import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.data.Manager;
 import com.example.milorad.rafroid.data.model.Lecture;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class LectureAdapter extends RecyclerView.Adapter<LectureAdapter.MyViewHolder> {
@@ -65,9 +70,19 @@ public class LectureAdapter extends RecyclerView.Adapter<LectureAdapter.MyViewHo
         holder.lectureLecturer.setText(lecture.getLecturer().getName());
         holder.lectureType.setText(lecture.getType());
         holder.lectureClassroom.setText(lecture.getClassroom().getName());
-        holder.lectureDay.setText(lecture.getDay().toString());
+        if(lecture.getDay() == null){
+            holder.lectureDay.setText("");
+        }
+        else {
+            holder.lectureDay.setText(lecture.getDay().toString());
+        }
         holder.lectureStartTime.setText(lecture.getStartTime());
         holder.lectureEndTime.setText(lecture.getEndTime());
+    }
+
+    public void setLectureList(List<Lecture> filteredList){
+        this.lectureList = filteredList;
+        notifyDataSetChanged();
     }
 
     @Override

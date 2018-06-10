@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            app:searchIcon="@drawable/ic_search"
+            app:searchHintIcon="@drawable/ic_searchhint"
+            app:closeIcon="@drawable/ic_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_weight="0.85"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="10dp"
+            android:popupBackground="@color/timeBackground"
+            android:textAlignment="textEnd"/>
+
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/search_recycler_view"
@@ -9,4 +38,4 @@
         android:layout_height="wrap_content"
         android:scrollbars="vertical" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
