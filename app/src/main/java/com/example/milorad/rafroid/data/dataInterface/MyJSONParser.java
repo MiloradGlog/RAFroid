@@ -112,6 +112,8 @@ public class MyJSONParser {
                 return DAY.ČET;
             }case ("PET"):{
                 return DAY.PET;
+            }case ("SUB"):{
+                return DAY.SUB;
             }
         }
         Log.e("PARSE DAY ERROR", "FOLLOWING STRING WAS NOT PARSED CORRECTLY: "+ dayString);
