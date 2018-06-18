@@ -3,10 +3,14 @@ package com.example.milorad.rafroid.data;
 import android.util.Log;
 
 import com.example.milorad.rafroid.data.model.Classroom;
+import com.example.milorad.rafroid.data.model.Consultation;
+import com.example.milorad.rafroid.data.model.Curriculum;
 import com.example.milorad.rafroid.data.model.DAY;
+import com.example.milorad.rafroid.data.model.Exam;
 import com.example.milorad.rafroid.data.model.Group;
 import com.example.milorad.rafroid.data.model.Lecture;
 import com.example.milorad.rafroid.data.model.Lecturer;
+import com.example.milorad.rafroid.data.model.NewsModel;
 import com.example.milorad.rafroid.data.model.Subject;
 
 import java.lang.reflect.Array;
@@ -14,6 +18,9 @@ import java.util.ArrayList;
 
 /**
  * Created by Milorad on 6/2/2018.
+ *
+ *
+ *
  */
 
 public class Manager {
@@ -24,6 +31,11 @@ public class Manager {
     private ArrayList<Classroom> classrooms;
     private ArrayList<Lecture> lectures;
 
+    private ArrayList<NewsModel> news;
+    private ArrayList<Consultation> consultations;
+    private ArrayList<Exam> exams;
+    private ArrayList<Curriculum> curriculums;
+
     private static Manager instance;
 
     private Manager(){
@@ -32,6 +44,11 @@ public class Manager {
         groups = new ArrayList<Group>();
         classrooms = new ArrayList<Classroom>();
         lectures = new ArrayList<Lecture>();
+
+        news = new ArrayList<NewsModel>();
+        consultations = new ArrayList<Consultation>();
+        exams = new ArrayList<Exam>();
+        curriculums = new ArrayList<Curriculum>();
     }
 
     public static Manager getInstance(){
@@ -110,6 +127,10 @@ public class Manager {
 
 
 
+
+
+
+
     /*
     FUNKCIJE ZA DODAVANJE U LISTE------------------
      */
@@ -179,6 +200,44 @@ public class Manager {
         return newClassroom;
     }
 
+    public NewsModel addNews(String title, String text, String date){
+        NewsModel newNews = new NewsModel(title, text, date);
+        news.add(newNews);
+        return newNews;
+    }
+
+    public Consultation addConsultation(String day, String time, String lecturer, String className, String classroom){
+
+        Consultation c = new Consultation(day, time, lecturer, className, classroom);
+        if (consultations.contains(c)) {
+            Log.e("DUPLICATE", "DUPLICATE CONSULTATION");
+            return c;
+        }
+        consultations.add(c);
+        return c;
+
+    }
+
+    public Exam addExam(String testName, String dateAndTime, String classroom, String professor){
+
+        Exam e = new Exam(testName, dateAndTime, classroom, professor);
+        if (exams.contains(e)){
+            return e;
+        }
+        exams.add(e);
+        return e;
+
+    }
+
+    public Curriculum addCurriculum(String testName, String dateAndTime, String classroom, String professor){
+        Curriculum c = new Curriculum(testName, dateAndTime, classroom, professor);
+        if (curriculums.contains(c)){
+            return c;
+        }
+        curriculums.add(c);
+        return c;
+    }
+
 
     /*
     FUNKCIJE ZA DOBAVLJANJE ODREDJENOG OBJEKTA IZ LISTI
@@ -237,5 +296,21 @@ public class Manager {
 
     public ArrayList<Lecture> getLectures() {
         return lectures;
+    }
+
+    public ArrayList<Consultation> getConsultations() {
+        return consultations;
+    }
+
+    public ArrayList<Curriculum> getCurriculums() {
+        return curriculums;
+    }
+
+    public ArrayList<Exam> getExams() {
+        return exams;
+    }
+
+    public ArrayList<NewsModel> getNews() {
+        return news;
     }
 }

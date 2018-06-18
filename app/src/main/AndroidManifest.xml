@@ -12,16 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".app.MainActivity"
-            android:label="@string/title_activity_main2"
+            android:name=".app.activities.SplashActivity"
+            android:label="@string/splash_activity_label"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.activities.SearchActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
                 <action android:name="android.intent.action.SEARCH"/>
 
             </intent-filter>
         </activity>
+        <activity android:name=".app.activities.NewsActivity"></activity>
     </application>
 
 </manifest>

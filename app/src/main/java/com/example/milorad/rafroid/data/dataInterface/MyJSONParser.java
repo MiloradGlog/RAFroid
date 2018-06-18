@@ -29,13 +29,23 @@ public class MyJSONParser {
     /**
      * Parsira predavanja i pakuje ih u manager, treba da se pokrene samo jednom.
      * Ako manager.getLectures nije prazan, returnuje bez pitanja
-     * @param arr JSONArray, niz koji treba da sadrzi predavanja
+     * @param classesJson String json, niz koji treba da sadrzi predavanja
      */
-    public void parseDataToManager(JSONArray arr){
+    public void parseClassesToManager(String classesJson){
         if (!manager.getLectures().isEmpty()){
             Log.e("ERROR PARSE DATA", "LECTURES NISU PRAZNI");
             return;
         }
+
+        JSONArray arr = null;
+        try{
+            JSONObject o = new JSONObject(classesJson);
+            arr = o.getJSONArray("schedule");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+
         JSONObject o = null;
         String predmet = "";
         String tip = "";
@@ -48,13 +58,13 @@ public class MyJSONParser {
             try {
                 o = arr.getJSONObject(i);
 
-                predmet = o.getString("predmet");
-                tip = o.getString("tip");
-                nastavnik = o.getString("nastavnik");
-                grupe = o.getString("grupe");
-                dan = o.getString("dan");
-                termin = o.getString("termin");
-                ucionica = o.getString("ucionica");
+                predmet = o.getString("class_name");
+                tip = o.getString("type");
+                nastavnik = o.getString("lecturer");
+                grupe = o.getString("student_groups");
+                dan = o.getString("day_of_week");
+                termin = o.getString("time");
+                ucionica = o.getString("classroom");
 
                 StringTokenizer stringTokenizer = new StringTokenizer(termin, "-");
 
@@ -78,6 +88,8 @@ public class MyJSONParser {
             }
         }
     }
+
+
 
     /**
      * Pakuje grupe u listu za kreiranje Lecture(predavanja) i upisuje je u manager ako je vec nema tamo
@@ -108,7 +120,7 @@ public class MyJSONParser {
                 return DAY.UTO;
             }case ("SRE"):{
                 return DAY.SRE;
-            }case ("?ET"):{
+            }case ("ČET"):{
                 return DAY.ČET;
             }case ("PET"):{
                 return DAY.PET;
@@ -119,5 +131,133 @@ public class MyJSONParser {
         Log.e("PARSE DAY ERROR", "FOLLOWING STRING WAS NOT PARSED CORRECTLY: "+ dayString);
         return null;
     }
+
+
+
+    public void parseNewsToManager(String newsJson){
+        if (!manager.getNews().isEmpty()){
+            Log.e("ERROR PARSE DATA", "News NISU PRAZNI");
+            return;
+        }
+
+        JSONArray arr = null;
+        try{
+            JSONObject o = new JSONObject(newsJson);
+            arr = o.getJSONArray("news");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+        JSONObject o = null;
+        String date = "";
+        String title = "";
+        String text = "";
+        for (int i = 0; i < arr.length(); i++){
+            try {
+                o = arr.getJSONObject(i);
+
+                date = o.getString("date");
+                title = o.getString("title");
+                text = o.getString("text");
+
+
+                manager.addNews(title, text, date);
+
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void parseConsultationsToManager(String consultationsJson){
+        if (!manager.getConsultations().isEmpty()){
+            Log.e("ERROR PARSE DATA", "Consultations NISU PRAZNI");
+            return;
+        }
+
+        JSONArray arr = null;
+        try{
+            JSONObject o = new JSONObject(consultationsJson);
+            arr = o.getJSONArray("schedule");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+        JSONObject o = null;
+        String day = "";
+        String time = "";
+        String lecturer = "";
+        String className = "";
+        String classroom = "";
+        for (int i = 0; i < arr.length(); i++){
+            try {
+                o = arr.getJSONObject(i);
+
+                day = o.getString("day");
+                time = o.getString("time");
+                lecturer = o.getString("lecturer");
+                className = o.getString("class_name");
+                classroom = o.getString("classroom");
+
+
+                manager.addConsultation(day, time, lecturer, className, classroom);
+
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void parseExamsToManager(String examsJson){
+        if (!manager.getExams().isEmpty()){
+            Log.e("ERROR PARSE DATA", "Exams NISU PRAZNI");
+            return;
+        }
+
+        JSONArray arr = null;
+        try{
+            JSONObject o = new JSONObject(examsJson);
+            arr = o.getJSONArray("schedule");
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+        JSONObject o = null;
+        String dateAndTime = "";
+        String test_name = "";
+        String classroom = "";
+        String professor = "";
+        String type = "";
+        for (int i = 0; i < arr.length(); i++){
+            try {
+                o = arr.getJSONObject(i);
+
+                dateAndTime = o.getString("date_and_time");
+                test_name = o.getString("test_name");
+                classroom = o.getString("classroom");
+                professor = o.getString("professor");
+                type = o.getString("type");
+
+                if (type.equals("CURRICULUM")){
+                    manager.addCurriculum(test_name, dateAndTime, classroom, professor);
+                }
+                else if (type.equals("EXAM")){
+                    manager.addExam(test_name, dateAndTime, classroom, professor);
+                }
+                else {
+                    Log.e("PARSERERR", "NIJE NI CURRICULUM NI EXAM");
+                }
+
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+
 
 }

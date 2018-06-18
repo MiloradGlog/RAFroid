@@ -23,10 +23,10 @@ public class URLConnector {
 
     private static String STRING_DATA = "";
 
-    public JSONArray getResponseJSONArray(){
+    public JSONArray getResponseJSONArray(String json){
         JSONArray array = null;
         try {
-            String str = testString;
+            String str = json;
             array = new JSONArray(str);
 
   /*      }catch (IOException e){
