@@ -11,6 +11,8 @@ import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.app.adapters.news.News;
 import com.example.milorad.rafroid.app.adapters.news.NewsAdapter;
 import com.example.milorad.rafroid.app.adapters.news.NewsChild;
+import com.example.milorad.rafroid.data.Manager;
+import com.example.milorad.rafroid.data.model.NewsModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,14 +46,15 @@ public class NewsActivity extends AppCompatActivity {
     private List<ParentObject> initData()
     {
         List<ParentObject> news = new ArrayList<>();
-        news.add(new News("Vest sa Rafa", "20/10/2018"));
-        news.add(new News("Druga neka vest", "20/08/2018"));
-        for(ParentObject vest:news)
+        List<NewsModel> vesti = Manager.getInstance().getNews();
+        int i = 0;
+        for(NewsModel vest:vesti)
         {
             List<Object> childList = new ArrayList<>();
-            childList.add(new NewsChild("text vesti sa RAFA"));
-            vest.setChildObjectList(childList);
-
+            childList.add(new NewsChild(vest.getText()));
+            news.add(new News(vest.getTitle(),vest.getDate()));
+            news.get(i).setChildObjectList(childList);
+            i++;
         }
 
         return news;

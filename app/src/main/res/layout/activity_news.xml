@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".app.activities.NewsActivity">
 
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

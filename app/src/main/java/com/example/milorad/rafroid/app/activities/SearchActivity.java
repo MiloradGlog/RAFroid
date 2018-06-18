@@ -16,6 +16,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.milorad.rafroid.R;
+import com.example.milorad.rafroid.app.fragments.CurrFragment;
+import com.example.milorad.rafroid.app.fragments.ExamFragment;
 import com.example.milorad.rafroid.app.fragments.MyScheduleFragment;
 import com.example.milorad.rafroid.app.adapters.SectionsPageAdapter;
 import com.example.milorad.rafroid.app.fragments.SearchFragment;
@@ -133,6 +135,8 @@ public class SearchActivity extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new MyScheduleFragment(), "Moj Raspored");
         adapter.addFragment(new SearchFragment(), "Pretraga Rasporeda");
+        adapter.addFragment(new ExamFragment(), "Ispiti");
+        adapter.addFragment(new CurrFragment(), "Kolokvijumi");
         viewPager.setAdapter(adapter);
     }
 
@@ -148,6 +152,8 @@ public class SearchActivity extends AppCompatActivity {
                 Toast.makeText(this, "Vesti", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_konsultacije:
+                Intent consultIntent = new Intent(getApplicationContext(), ConsultActivity.class);
+                startActivity(consultIntent);
                 Toast.makeText(this, "Konsultacije", Toast.LENGTH_SHORT).show();
                 break;
 
