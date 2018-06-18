@@ -88,6 +88,22 @@ public class Manager {
         }
         return list;
     }
+
+    /**
+     *
+     * @param group objekat grupe za koju trazimo
+     * @param day   Enum dana za koji hocemo predavanja
+     * @return
+     */
+    public ArrayList<Lecture> getLecturesByGroupAndDay(Group group, DAY day){
+        ArrayList<Lecture> list = new ArrayList<Lecture>();
+        for (Lecture l : lectures){
+            if (l.hasGroup(group.getName()) && l.hasDay(day.toString())) list.add(l);
+        }
+        return list;
+    }
+
+
     /**
      *
      * @param subject objekat predmeta za koji trazimo
