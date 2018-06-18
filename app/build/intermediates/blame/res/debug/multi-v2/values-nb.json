@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Projekti\\Android\\RAFroid\\RAFroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
+            "outputFile": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nb\\values-nb.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Milorad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\9ac5a3ede2217c566afb8b537ca7e26b\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Milorad\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\05e877f95803a0202392d731166500a2\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\5c67e89be0abc7ffae7c2064a3c8341e\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

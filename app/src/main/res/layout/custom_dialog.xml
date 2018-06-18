@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customlayout"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/dialogEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Napisi grupu"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:textSize="9sp"
+        android:text="(Moci ces da promenis u opcijama)"/>
+
+    <Button
+        android:id="@+id/dialogButton"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:background="@drawable/customshape"
+        android:text="Dalje"
+        android:textAllCaps="false"
+        android:textColor="@color/itemBackground"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

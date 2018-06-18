@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Projekti\\Android\\RAFroid\\RAFroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Milorad\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\9ac5a3ede2217c566afb8b537ca7e26b\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Milorad\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\57bc299702cf3e1de969359a3f0685bd\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\1b0349c1718d8c719ce4564939808b69\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

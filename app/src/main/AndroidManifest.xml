@@ -17,8 +17,8 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
@@ -26,12 +26,12 @@
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.SEARCH"/>
-
+                <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
-        <activity android:name=".app.activities.NewsActivity"></activity>
-        <activity android:name=".app.activities.ConsultActivity"></activity>
+        <activity android:name=".app.activities.NewsActivity" />
+        <activity android:name=".app.activities.ConsultActivity"/>
+        <activity android:name=".app.activities.SettingsActivity"></activity>
     </application>
 
 </manifest>

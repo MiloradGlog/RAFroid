@@ -38,6 +38,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.milorad.rafroid.app.activities.NewsActivity" />
+        <activity android:name="com.example.milorad.rafroid.app.activities.ConsultActivity" />
+        <activity android:name="com.example.milorad.rafroid.app.activities.SettingsActivity" />
     </application>
 
 </manifest>

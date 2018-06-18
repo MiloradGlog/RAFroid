@@ -158,6 +158,8 @@ public class SearchActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_opcije:
+                Intent settingsIntent = new Intent(getApplicationContext(), SettingsActivity.class);
+                startActivity(settingsIntent);
                 Toast.makeText(this, "Opcije", Toast.LENGTH_SHORT).show();
                 break;
         }
