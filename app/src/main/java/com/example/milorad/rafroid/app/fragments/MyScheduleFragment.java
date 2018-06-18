@@ -1,5 +1,7 @@
 package com.example.milorad.rafroid.app.fragments;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,14 +15,9 @@ import android.view.ViewGroup;
 
 import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.app.adapters.LectureAdapter;
-import com.example.milorad.rafroid.data.dataInterface.MyJSONParser;
-import com.example.milorad.rafroid.data.dataInterface.URLConnector;
 import com.example.milorad.rafroid.data.Manager;
-import com.example.milorad.rafroid.data.model.Classroom;
 import com.example.milorad.rafroid.data.model.Lecture;
 import com.example.milorad.rafroid.data.model.Group;
-
-import org.json.JSONArray;
 
 import java.util.List;
 
@@ -37,8 +34,16 @@ public class MyScheduleFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.my_schedule_fragment,container,false);
 
+
         lecture_RecyclerView = view.getRootView().findViewById(R.id.my_schedule_fragment_recycler_view);
-        Group group = manager.getGroupByString("306");
+
+
+        SharedPreferences preferences = getContext().getSharedPreferences(Manager.PREFERENCES_NAME, Context.MODE_PRIVATE);
+        //povlacimo korisnikovu grupu iz preferences, default je 101 ako ne nadje nista
+        String grupaString = preferences.getString(Manager.PREFERENCE_USER_GROUP_KEY, "101");
+
+
+        Group group = manager.getGroupByString(grupaString);
         lectureList = manager.getLecturesByGroup(group);
         lectureAdapter = new LectureAdapter(view.getContext(), lectureList);
 

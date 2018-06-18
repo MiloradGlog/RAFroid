@@ -3,41 +3,27 @@ package com.example.milorad.rafroid.app.fragments;
 import android.app.SearchManager;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.example.milorad.rafroid.R;
-import com.example.milorad.rafroid.app.adapters.LectureAdapter;
 import com.example.milorad.rafroid.app.adapters.LectureAdapterSearch;
 import com.example.milorad.rafroid.data.Manager;
-import com.example.milorad.rafroid.data.dataInterface.MyJSONParser;
-import com.example.milorad.rafroid.data.dataInterface.URLConnector;
-import com.example.milorad.rafroid.data.model.Classroom;
 import com.example.milorad.rafroid.data.model.Lecture;
 
-import org.json.JSONArray;
-
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 public class SearchFragment extends Fragment implements AdapterView.OnItemSelectedListener
 {

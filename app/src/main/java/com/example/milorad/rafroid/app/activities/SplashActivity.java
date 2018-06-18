@@ -1,6 +1,7 @@
 package com.example.milorad.rafroid.app.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.milorad.rafroid.R;
+import com.example.milorad.rafroid.data.Manager;
 
 import java.io.IOException;
 
@@ -51,7 +53,30 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void startLoadingData(){
+
+        checkFirstTimeRun();
         readClassesFromURL();
+    }
+
+    private void checkFirstTimeRun(){
+        SharedPreferences preferences = getSharedPreferences(Manager.PREFERENCES_NAME,MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+
+
+
+        //Izvrsava se ako jeste prvo pokretanje aplikacije, true znaci da vraca true ako ne postoji taj setting
+        //!!!ZBOG TESTA ISKOMENTARISAO IF, SADA UMESTO PRVI PUT, IZVRSAVA SE UVEK
+       // if (preferences.getBoolean(Manager.PREFERENCE_FIRST_TIME_KEY, true)){
+            //setujemo da je prvo otvaranje false, dakle nece vise da ulazi u ovaj if kad ponovo otvorimo app
+            editor.putBoolean(Manager.PREFERENCE_FIRST_TIME_KEY, false);
+            //dodamo grupu 306 kao grupu koja je izabrana. Ovde treba da se uradi textbox i button koji ce da pita korisnika da unese grupu i da setuje
+            //PREF_USER_GROUP na izabranu grupu. dalje u kodu pristupamo tome sa preferences.getString(Manager.PREFERENCE_USER_GROUP_KEY)
+            editor.putString(Manager.PREFERENCE_USER_GROUP_KEY, "301");
+            editor.commit();
+
+            Log.d("PREFTEST", Boolean.toString(preferences.getBoolean(Manager.PREFERENCE_FIRST_TIME_KEY, true)));
+       // }
+
     }
 
     private void readClassesFromURL() {

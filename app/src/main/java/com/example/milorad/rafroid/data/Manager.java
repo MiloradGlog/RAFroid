@@ -25,6 +25,10 @@ import java.util.ArrayList;
 
 public class Manager {
 
+    public static final String PREFERENCES_NAME = "MY_PREFERENCES";
+    public static final String PREFERENCE_FIRST_TIME_KEY = "FIRST_TIME_KEY";
+    public static final String PREFERENCE_USER_GROUP_KEY = "USER_GROUP_KEY";
+
     private ArrayList<Subject> subjects;
     private ArrayList<Lecturer> lecturers;
     private ArrayList<Group> groups;
