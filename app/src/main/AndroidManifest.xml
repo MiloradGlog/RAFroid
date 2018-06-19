@@ -13,7 +13,6 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".app.activities.SplashActivity"
-            android:label="@string/splash_activity_label"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait">
             <intent-filter>

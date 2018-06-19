@@ -21,7 +21,6 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.milorad.rafroid.app.activities.SplashActivity"
-            android:label="@string/splash_activity_label"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>

@@ -69,7 +69,7 @@ public class SearchMainFragment extends Fragment
     private void setupViewPager(ViewPager viewPager)
     {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getChildFragmentManager());
-        adapter.addFragment(new MyScheduleFragment(), "Moj Raspored");
+        adapter.addFragment(new MyScheduleFragment(), "Moj raspored");
         adapter.addFragment(new SearchFragment(), "Pretraga Rasporeda");
         adapter.addFragment(new ExamFragment(), "Ispiti");
         adapter.addFragment(new CurrFragment(), "Kolokvijumi");
