@@ -70,12 +70,12 @@ public class LectureAdapter extends RecyclerView.Adapter<LectureAdapter.MyViewHo
         holder.lectureLecturer.setText(lecture.getLecturer().getName());
         holder.lectureType.setText(lecture.getType());
         holder.lectureClassroom.setText(lecture.getClassroom().getName());
-        if(lecture.getDay() == null){
-            holder.lectureDay.setText("");
-        }
-        else {
-            holder.lectureDay.setText(lecture.getDay().toString());
-        }
+//        if(lecture.getDay() == null){
+//            holder.lectureDay.setText("");
+//        }
+//        else {
+//            holder.lectureDay.setText(lecture.getDay().toString());
+//        }
         holder.lectureStartTime.setText(lecture.getStartTime());
         holder.lectureEndTime.setText(lecture.getEndTime());
     }
