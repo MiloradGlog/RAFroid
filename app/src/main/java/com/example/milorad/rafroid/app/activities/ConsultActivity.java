@@ -19,7 +19,7 @@ public class ConsultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consult);
+        setContentView(R.layout.consult_fragment);
 
         consult_recycler = findViewById(R.id.consult_recycler);
         adapter = new ConsultAdapter(this, manager.getConsultations());

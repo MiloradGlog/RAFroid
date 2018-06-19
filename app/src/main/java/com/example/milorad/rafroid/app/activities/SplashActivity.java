@@ -10,7 +10,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.data.Manager;
@@ -84,7 +83,7 @@ public class SplashActivity extends AppCompatActivity {
         mBuilder.setView(mView);
         dialog = mBuilder.create();
 
-        intent = new Intent(this, SearchActivity.class);
+        intent = new Intent(this, MainActivity.class);
 
         startLoadingData();
 

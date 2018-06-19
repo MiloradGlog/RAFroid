@@ -1,10 +1,15 @@
-package com.example.milorad.rafroid.app.activities;
+package com.example.milorad.rafroid.app.fragments;
 
-import android.os.PersistableBundle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentObject;
 import com.example.milorad.rafroid.R;
@@ -17,30 +22,27 @@ import com.example.milorad.rafroid.data.model.NewsModel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NewsActivity extends AppCompatActivity {
+public class NewsFragment extends Fragment {
 
     RecyclerView newsRecycler;
     ArrayList<News> newsList;
 
+
+    @Nullable
     @Override
-    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
-        ((NewsAdapter)newsRecycler.getAdapter()).onSaveInstanceState(outState);
-    }
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.news_fragment,container,false);
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.news_fragment);
-
-
-        newsRecycler = (RecyclerView) findViewById(R.id.newsRecycler);
-        newsRecycler.setLayoutManager(new LinearLayoutManager(this));
-        NewsAdapter adapter = new NewsAdapter(this, initData());
+        newsRecycler = (RecyclerView) view.findViewById(R.id.newsRecycler);
+        newsRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        NewsAdapter adapter = new NewsAdapter(getContext(), initData());
         adapter.setParentAndIconExpandOnClick(true);
         adapter.setParentClickableViewAnimationDefaultDuration();
         newsRecycler.setAdapter(adapter);
+
+        return view;
     }
+
 
 
     private List<ParentObject> initData()
@@ -59,4 +61,5 @@ public class NewsActivity extends AppCompatActivity {
 
         return news;
     }
+
 }
