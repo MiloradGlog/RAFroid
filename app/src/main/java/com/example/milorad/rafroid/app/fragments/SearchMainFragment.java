@@ -16,6 +16,10 @@ import android.view.ViewGroup;
 
 import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.app.adapters.SectionsPageAdapter;
+import com.example.milorad.rafroid.app.fragments.searchFragments.CurrFragment;
+import com.example.milorad.rafroid.app.fragments.searchFragments.ExamFragment;
+import com.example.milorad.rafroid.app.fragments.searchFragments.MyScheduleFragment;
+import com.example.milorad.rafroid.app.fragments.searchFragments.SearchFragment;
 import com.example.milorad.rafroid.data.Manager;
 
 public class SearchMainFragment extends Fragment

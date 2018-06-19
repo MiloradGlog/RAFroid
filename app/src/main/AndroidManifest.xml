@@ -29,9 +29,6 @@
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
-        <activity android:name=".app.activities.NewsActivity" />
-        <activity android:name=".app.activities.ConsultActivity"/>
-        <activity android:name=".app.activities.SettingsActivity"></activity>
     </application>
 
 </manifest>

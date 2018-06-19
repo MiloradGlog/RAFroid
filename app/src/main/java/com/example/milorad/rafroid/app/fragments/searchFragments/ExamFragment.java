@@ -1,4 +1,4 @@
-package com.example.milorad.rafroid.app.fragments;
+package com.example.milorad.rafroid.app.fragments.searchFragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

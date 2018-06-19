@@ -1,4 +1,4 @@
-package com.example.milorad.rafroid.app.fragments;
+package com.example.milorad.rafroid.app.fragments.searchFragments;
 
 import android.app.SearchManager;
 import android.content.Context;
