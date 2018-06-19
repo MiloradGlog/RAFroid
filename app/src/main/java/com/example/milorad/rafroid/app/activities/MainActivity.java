@@ -21,6 +21,7 @@ import com.example.milorad.rafroid.app.adapters.SectionsPageAdapter;
 import com.example.milorad.rafroid.app.fragments.ConsultationFragment;
 import com.example.milorad.rafroid.app.fragments.NewsFragment;
 import com.example.milorad.rafroid.app.fragments.SearchMainFragment;
+import com.example.milorad.rafroid.app.fragments.SettingsFragment;
 import com.example.milorad.rafroid.data.dataInterface.MyJSONParser;
 import com.example.milorad.rafroid.data.Manager;
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private SearchMainFragment searchMainFragment;
     private NewsFragment newsFragment;
     private ConsultationFragment consultFragment;
+    private SettingsFragment settingsFragment;
 
     private static final String DEBUG_TAG = "TESTIRAM";
 
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         searchMainFragment = new SearchMainFragment();
         newsFragment = new NewsFragment();
         consultFragment = new ConsultationFragment();
+        settingsFragment = new SettingsFragment();
 
         loadData();
 
@@ -143,8 +146,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_opcije:
-                Intent settingsIntent = new Intent(getApplicationContext(), SettingsActivity.class);
-                startActivity(settingsIntent);
+                beginFragmentTransaction(settingsFragment);
                 break;
         }
 

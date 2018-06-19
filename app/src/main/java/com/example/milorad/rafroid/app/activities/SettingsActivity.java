@@ -1,6 +1,5 @@
 package com.example.milorad.rafroid.app.activities;
 
-import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -16,8 +15,6 @@ import android.widget.EditText;
 import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.data.Manager;
 
-import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
-
 public class SettingsActivity extends AppCompatActivity {
 
     private EditText groupET;
@@ -29,7 +26,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.settings_fragment);
 
         groupET = findViewById(R.id.settings_groupET);
         saveButton = findViewById(R.id.saveButton);
