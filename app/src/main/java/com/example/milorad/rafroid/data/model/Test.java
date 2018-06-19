@@ -4,14 +4,16 @@ public abstract class Test {
 
     private String testName;
     private String date;
-    private String time;
+    private String startTime;
+    private String endTime;
     private String classroom;
     private String professor;
 
-    public Test(String testName, String date, String time, String classroom, String professor) {
+    public Test(String testName, String date, String startTime, String endTime, String classroom, String professor) {
         this.testName = testName;
         this.date = date;
-        this.time = time;
+        this.startTime = startTime;
+        this.endTime = endTime;
         this.classroom = classroom;
         this.professor = professor;
     }
@@ -24,8 +26,12 @@ public abstract class Test {
         return date;
     }
 
-    public String getTime() {
-        return time;
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
     }
 
     public String getProfessor() {

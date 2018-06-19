@@ -12,7 +12,9 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="grey">#737373</color>
+    <color name="blue">#184e7d</color>
     <color name="lightgrey">#e9e9e9</color>
-    <color name="timeBackground">#BDC3C7</color>
+    <!--<color name="timeBackground">#BDC3C7</color>-->
+    <color name="timeBackground">#bdcbdb</color>
     <color name="red">#da0000</color>
 </resources>

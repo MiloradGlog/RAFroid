@@ -25,7 +25,8 @@ public class ConsultAdapter extends RecyclerView.Adapter<ConsultAdapter.MyViewHo
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView consultProf;
         public TextView consultDay;
-        public TextView consultTime;
+        public TextView consultStartTime;
+        public TextView consultEndTime;
         public TextView consultName;
         public TextView consultClass;
 
@@ -35,7 +36,8 @@ public class ConsultAdapter extends RecyclerView.Adapter<ConsultAdapter.MyViewHo
             consultName = view.findViewById(R.id.consult_name);
             consultProf = view.findViewById(R.id.consult_prof);
             consultDay = view.findViewById(R.id.consult_day);
-            consultTime = view.findViewById(R.id.consult_time);
+            consultStartTime = view.findViewById(R.id.consult_startTime);
+            consultEndTime = view.findViewById(R.id.consult_endTime);
             consultClass = view.findViewById(R.id.consult_class);
         }
     }
@@ -57,7 +59,8 @@ public class ConsultAdapter extends RecyclerView.Adapter<ConsultAdapter.MyViewHo
     public void onBindViewHolder(@NonNull ConsultAdapter.MyViewHolder holder, int position) {
         Consultation consult = consultList.get(position);
         holder.consultClass.setText(consult.getClassroom());
-        holder.consultTime.setText(consult.getTime());
+        holder.consultStartTime.setText(consult.getStartTime());
+        holder.consultEndTime.setText(consult.getEndTime());
         holder.consultDay.setText(consult.getDay());
         holder.consultProf.setText(consult.getLecturer());
         holder.consultName.setText(consult.getClassName());

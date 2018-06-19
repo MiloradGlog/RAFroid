@@ -236,9 +236,9 @@ public class Manager {
         return newNews;
     }
 
-    public Consultation addConsultation(String day, String time, String lecturer, String className, String classroom){
+    public Consultation addConsultation(String day, String startTime, String endTime, String lecturer, String className, String classroom){
 
-        Consultation c = new Consultation(day, time, lecturer, className, classroom);
+        Consultation c = new Consultation(day, startTime, endTime, lecturer, className, classroom);
         if (consultations.contains(c)) {
             Log.e("DUPLICATE", "DUPLICATE CONSULTATION");
             return c;
@@ -248,9 +248,9 @@ public class Manager {
 
     }
 
-    public Exam addExam(String testName, String date, String time, String classroom, String professor){
+    public Exam addExam(String testName, String date, String startTime, String endTime, String classroom, String professor){
 
-        Exam e = new Exam(testName, date, time, classroom, professor);
+        Exam e = new Exam(testName, date, startTime, endTime, classroom, professor);
         if (exams.contains(e)){
             return e;
         }
@@ -259,8 +259,8 @@ public class Manager {
 
     }
 
-    public Curriculum addCurriculum(String testName, String date, String time, String classroom, String professor){
-        Curriculum c = new Curriculum(testName, date, time, classroom, professor);
+    public Curriculum addCurriculum(String testName, String date, String startTime, String endTime, String classroom, String professor){
+        Curriculum c = new Curriculum(testName, date, startTime, endTime, classroom, professor);
         if (curriculums.contains(c)){
             return c;
         }

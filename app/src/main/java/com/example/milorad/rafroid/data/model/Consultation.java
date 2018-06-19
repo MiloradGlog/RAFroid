@@ -3,14 +3,16 @@ package com.example.milorad.rafroid.data.model;
 public class Consultation {
 
     private String day;
-    private String time;
+    private String startTime;
+    private String endTime;
     private String lecturer;
     private String className;
     private String classroom;
 
-    public Consultation(String day, String time, String lecturer, String className, String classroom){
+    public Consultation(String day, String startTime, String endTime, String lecturer, String className, String classroom){
         this.day = day;
-        this.time = time;
+        this.startTime = startTime;
+        this.endTime = endTime;
         this.lecturer = lecturer;
         this.className = className;
         this.classroom = classroom;
@@ -32,7 +34,11 @@ public class Consultation {
         return lecturer;
     }
 
-    public String getTime() {
-        return time;
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
     }
 }

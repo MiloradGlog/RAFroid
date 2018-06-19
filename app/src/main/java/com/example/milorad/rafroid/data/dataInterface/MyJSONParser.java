@@ -201,9 +201,12 @@ public class MyJSONParser {
                 className = o.getString("class_name");
                 classroom = o.getString("classroom");
 
+                String startTime = time.substring(0, 2) + ":00";
+                String endTime = time.substring(3, 5) + ":00";
+
                 String newDay = day.substring(0,3).toUpperCase();
 
-                manager.addConsultation(newDay, time, lecturer, className, classroom);
+                manager.addConsultation(newDay, startTime, endTime, lecturer, className, classroom);
 
             } catch (Exception e){
                 e.printStackTrace();
@@ -247,11 +250,14 @@ public class MyJSONParser {
                 date = dateAndTime.substring(0, 6);
                 time = dateAndTime.substring(7) + "h";
 
+                String startTime = time.substring(0, 2) + ":00";
+                String endTime = time.substring(3, 5) + ":00";
+
                 if (type.equals("CURRICULUM")){
-                    manager.addCurriculum(test_name, date, time, classroom, professor);
+                    manager.addCurriculum(test_name, date, startTime, endTime, classroom, professor);
                 }
                 else if (type.equals("EXAM")){
-                    manager.addExam(test_name, date, time, classroom, professor);
+                    manager.addExam(test_name, date, startTime, endTime, classroom, professor);
                 }
                 else {
                     Log.e("PARSERERR", "NIJE NI CURRICULUM NI EXAM");
