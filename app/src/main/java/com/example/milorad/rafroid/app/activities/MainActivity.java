@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 menuSelector(item);
+                drawerLayout.closeDrawers();
                 return false;
             }
         });

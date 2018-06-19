@@ -1,4 +1,4 @@
-#Mon Jun 18 22:05:45 CEST 2018
-base.0=F\:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+#Tue Jun 19 17:00:32 CEST 2018
+base.0=F\:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex

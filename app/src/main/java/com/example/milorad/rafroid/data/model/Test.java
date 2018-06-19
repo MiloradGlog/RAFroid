@@ -3,13 +3,15 @@ package com.example.milorad.rafroid.data.model;
 public abstract class Test {
 
     private String testName;
-    private String dateAndTime;
+    private String date;
+    private String time;
     private String classroom;
     private String professor;
 
-    public Test(String testName, String dateAndTime, String classroom, String professor) {
+    public Test(String testName, String date, String time, String classroom, String professor) {
         this.testName = testName;
-        this.dateAndTime = dateAndTime;
+        this.date = date;
+        this.time = time;
         this.classroom = classroom;
         this.professor = professor;
     }
@@ -18,8 +20,12 @@ public abstract class Test {
         return classroom;
     }
 
-    public String getDateAndTime() {
-        return dateAndTime;
+    public String getDate() {
+        return date;
+    }
+
+    public String getTime() {
+        return time;
     }
 
     public String getProfessor() {

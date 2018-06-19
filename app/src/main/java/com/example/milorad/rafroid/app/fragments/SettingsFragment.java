@@ -50,7 +50,7 @@ public class SettingsFragment extends Fragment {
             public void onClick(View v) {
 
                 editor.putString(Manager.PREFERENCE_USER_GROUP_KEY, groupET.getText().toString());
-                editor.apply();
+                editor.commit();
 
                 PackageManager packageManager = getContext().getPackageManager();
                 Intent startActivity = packageManager.getLaunchIntentForPackage(getContext().getPackageName());

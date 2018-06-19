@@ -238,9 +238,9 @@ public class Manager {
 
     }
 
-    public Exam addExam(String testName, String dateAndTime, String classroom, String professor){
+    public Exam addExam(String testName, String date, String time, String classroom, String professor){
 
-        Exam e = new Exam(testName, dateAndTime, classroom, professor);
+        Exam e = new Exam(testName, date, time, classroom, professor);
         if (exams.contains(e)){
             return e;
         }
@@ -249,8 +249,8 @@ public class Manager {
 
     }
 
-    public Curriculum addCurriculum(String testName, String dateAndTime, String classroom, String professor){
-        Curriculum c = new Curriculum(testName, dateAndTime, classroom, professor);
+    public Curriculum addCurriculum(String testName, String date, String time, String classroom, String professor){
+        Curriculum c = new Curriculum(testName, date, time, classroom, professor);
         if (curriculums.contains(c)){
             return c;
         }

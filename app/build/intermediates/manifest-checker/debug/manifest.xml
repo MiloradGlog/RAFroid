@@ -22,6 +22,7 @@
         <activity
             android:name="com.example.milorad.rafroid.app.activities.SplashActivity"
             android:label="@string/splash_activity_label"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,16 +31,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.milorad.rafroid.app.activities.SearchActivity"
+            android:name="com.example.milorad.rafroid.app.activities.MainActivity"
             android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.milorad.rafroid.app.activities.NewsActivity" />
-        <activity android:name="com.example.milorad.rafroid.app.activities.ConsultActivity" />
-        <activity android:name="com.example.milorad.rafroid.app.activities.SettingsActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

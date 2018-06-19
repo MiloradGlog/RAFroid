@@ -160,9 +160,9 @@ public class MyJSONParser {
                 date = o.getString("date");
                 title = o.getString("title");
                 text = o.getString("text");
+                String newDate = date.substring(0,10) + "    " + date.substring(11, 19);
 
-
-                manager.addNews(title, text, date);
+                manager.addNews(title, text, newDate);
 
             } catch (Exception e){
                 e.printStackTrace();
@@ -196,13 +196,14 @@ public class MyJSONParser {
                 o = arr.getJSONObject(i);
 
                 day = o.getString("day");
-                time = o.getString("time");
+                time = o.getString("time") + "h";
                 lecturer = o.getString("lecturer");
                 className = o.getString("class_name");
                 classroom = o.getString("classroom");
 
+                String newDay = day.substring(0,3).toUpperCase();
 
-                manager.addConsultation(day, time, lecturer, className, classroom);
+                manager.addConsultation(newDay, time, lecturer, className, classroom);
 
             } catch (Exception e){
                 e.printStackTrace();
@@ -227,6 +228,8 @@ public class MyJSONParser {
 
         JSONObject o = null;
         String dateAndTime = "";
+        String date = "";
+        String time = "";
         String test_name = "";
         String classroom = "";
         String professor = "";
@@ -241,11 +244,14 @@ public class MyJSONParser {
                 professor = o.getString("professor");
                 type = o.getString("type");
 
+                date = dateAndTime.substring(0, 6);
+                time = dateAndTime.substring(7) + "h";
+
                 if (type.equals("CURRICULUM")){
-                    manager.addCurriculum(test_name, dateAndTime, classroom, professor);
+                    manager.addCurriculum(test_name, date, time, classroom, professor);
                 }
                 else if (type.equals("EXAM")){
-                    manager.addExam(test_name, dateAndTime, classroom, professor);
+                    manager.addExam(test_name, date, time, classroom, professor);
                 }
                 else {
                     Log.e("PARSERERR", "NIJE NI CURRICULUM NI EXAM");

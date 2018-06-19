@@ -25,6 +25,7 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.MyViewHolder>
         public TextView examProf;
         public TextView examClass;
         public TextView examDate;
+        public TextView examTime;
         public TextView examName;
 
         public MyViewHolder(View view) {
@@ -33,6 +34,7 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.MyViewHolder>
             examName = view.findViewById(R.id.exam_name);
             examProf = view.findViewById(R.id.exam_prof);
             examDate = view.findViewById(R.id.exam_date);
+            examTime = view.findViewById(R.id.exam_time);
             examClass = view.findViewById(R.id.exam_classroom);
         }
     }
@@ -55,7 +57,8 @@ public class ExamAdapter extends RecyclerView.Adapter<ExamAdapter.MyViewHolder>
         Exam exam = examList.get(position);
         holder.examName.setText(exam.getTestName());
         holder.examClass.setText(exam.getClassroom());
-        holder.examDate.setText(exam.getDateAndTime());
+        holder.examDate.setText(exam.getDate());
+        holder.examTime.setText(exam.getTime());
         holder.examProf.setText(exam.getProfessor());
 
     }

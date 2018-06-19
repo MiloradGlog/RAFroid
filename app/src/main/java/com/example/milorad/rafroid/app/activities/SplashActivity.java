@@ -96,13 +96,8 @@ public class SplashActivity extends AppCompatActivity {
 
     private void checkFirstTimeRun(){
 
-        //Izvrsava se ako jeste prvo pokretanje aplikacije, true znaci da vraca true ako ne postoji taj setting
-        //!!!ZBOG TESTA ISKOMENTARISAO IF, SADA UMESTO PRVI PUT, IZVRSAVA SE UVEK
         if (preferences.getBoolean(Manager.PREFERENCE_FIRST_TIME_KEY, true)){
-            //setujemo da je prvo otvaranje false, dakle nece vise da ulazi u ovaj if kad ponovo otvorimo app
             dialog.show();
-            //dodamo grupu 306 kao grupu koja je izabrana. Ovde treba da se uradi textbox i button koji ce da pita korisnika da unese grupu i da setuje
-            //PREF_USER_GROUP na izabranu grupu. dalje u kodu pristupamo tome sa preferences.getString(Manager.PREFERENCE_USER_GROUP_KEY)
         }
         else {
             readClassesFromURL();

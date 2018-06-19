@@ -48,6 +48,10 @@
         "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_nunito_bold.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\nunito_bold.ttf"
+    },
+    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
@@ -72,6 +76,10 @@
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\1b0349c1718d8c719ce4564939808b69\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_news_fragment.xml.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\news_fragment.xml"
+    },
+    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -82,6 +90,10 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_light.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\rubik_light.ttf"
     },
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -128,6 +140,10 @@
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\anim\\abc_popup_exit.xml"
     },
     {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_dosis_regular.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\dosis_regular.ttf"
+    },
+    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
@@ -150,10 +166,6 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
-        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
@@ -254,6 +266,10 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_separator.xml.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\1b0349c1718d8c719ce4564939808b69\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_settings_fragment.xml.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\settings_fragment.xml"
     },
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -418,10 +434,6 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_news.xml.flat",
-        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\activity_news.xml"
     },
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
@@ -638,6 +650,10 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_didactgothic_regular.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\didactgothic_regular.ttf"
     },
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_day_fragment.xml.flat",
@@ -960,10 +976,6 @@
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\5c67e89be0abc7ffae7c2064a3c8341e\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_search.xml.flat",
-        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\activity_search.xml"
-    },
-    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow_custom.xml.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\2f5e88075eb3e48d8aafb6a3dcfc7a1e\\res\\layout\\notification_template_big_media_narrow_custom.xml"
     },
@@ -1080,6 +1092,10 @@
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_opensans_regular.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\opensans_regular.ttf"
+    },
+    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable\\abc_tab_indicator_material.xml"
     },
@@ -1090,6 +1106,10 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_medium.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\rubik_medium.ttf"
     },
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
@@ -1620,6 +1640,10 @@
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\5c67e89be0abc7ffae7c2064a3c8341e\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_nunito_semibold.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\nunito_semibold.ttf"
+    },
+    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -1670,6 +1694,14 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_dialog_title_material.xml.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_consult_fragment.xml.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\consult_fragment.xml"
+    },
+    {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_nunito_regular.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\nunito_regular.ttf"
     },
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -1808,6 +1840,10 @@
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_regular.ttf.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\rubik_regular.ttf"
+    },
+    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -1854,6 +1890,10 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\color_design_tint_password_toggle.xml.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\1b0349c1718d8c719ce4564939808b69\\res\\color\\design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
@@ -1912,6 +1952,10 @@
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_main_fragment.xml.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\search_main_fragment.xml"
+    },
+    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\1b0349c1718d8c719ce4564939808b69\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
     },
@@ -1948,6 +1992,10 @@
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\font_nunito.xml.flat",
+        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\font\\nunito.xml"
+    },
+    {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_customshapebottomleft.xml.flat",
         "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\drawable\\customshapebottomleft.xml"
     },
@@ -1970,9 +2018,5 @@
     {
         "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\MazZa\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\37062a2ddb1f209a177d5a674f9921a7\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
-        "merged": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_consult.xml.flat",
-        "source": "F:\\AndroidProjects\\RAFroid\\RAFroid\\app\\src\\main\\res\\layout\\activity_consult.xml"
     }
 ]

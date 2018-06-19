@@ -29,12 +29,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="@color/black"
+                android:fontFamily="@font/nunito_semibold"
                 android:text="Verovatnoca i statistika"/>
 
             <TextView
                 android:id="@+id/sp_lectureType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
                 android:textSize="15sp"
                 android:textColor="@color/grey"
                 android:text="Predavanja"/>
@@ -48,6 +50,7 @@
                     android:id="@+id/sp_lectureClassroom"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_regular"
                     android:textSize="15sp"
                     android:textColor="@color/grey"
                     android:text="Ucionica 6"/>
@@ -70,6 +73,7 @@
                         android:id="@+id/sp_lectureLecturer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
                         android:textSize="15sp"
                         android:textColor="@color/grey"
                         android:text="Jelena Jovanovic"/>
@@ -103,6 +107,7 @@
                     android:id="@+id/sp_groups"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_regular"
                     android:textColor="@color/grey"
                     android:text="Grupe"/>
 

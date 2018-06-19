@@ -26,6 +26,7 @@ public class CurrAdapter extends RecyclerView.Adapter<CurrAdapter.MyViewHolder>
         public TextView currProf;
         public TextView currClass;
         public TextView currDate;
+        public TextView currTime;
         public TextView currName;
 
         public MyViewHolder(View view) {
@@ -34,6 +35,7 @@ public class CurrAdapter extends RecyclerView.Adapter<CurrAdapter.MyViewHolder>
             currName = view.findViewById(R.id.curr_name);
             currProf = view.findViewById(R.id.curr_prof);
             currDate = view.findViewById(R.id.curr_date);
+            currTime = view.findViewById(R.id.curr_time);
             currClass = view.findViewById(R.id.curr_classroom);
         }
     }
@@ -56,7 +58,8 @@ public class CurrAdapter extends RecyclerView.Adapter<CurrAdapter.MyViewHolder>
         Curriculum curr = currList.get(position);
         holder.currName.setText(curr.getTestName());
         holder.currClass.setText(curr.getClassroom());
-        holder.currDate.setText(curr.getDateAndTime());
+        holder.currDate.setText(curr.getDate());
+        holder.currTime.setText(curr.getTime());
         holder.currProf.setText(curr.getProfessor());
 
     }
