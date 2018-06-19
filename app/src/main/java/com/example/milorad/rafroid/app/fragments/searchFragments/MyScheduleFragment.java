@@ -22,6 +22,8 @@ import com.example.milorad.rafroid.data.model.Lecture;
 import com.example.milorad.rafroid.data.model.Group;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class MyScheduleFragment extends Fragment
@@ -50,8 +52,8 @@ public class MyScheduleFragment extends Fragment
 
         setUpButtons(view);
 
+        DAY danasnjiDan = getCurrentDay();
 
-        DAY danasnjiDan = DAY.UTO;
         updateButtons(tueButton, danasnjiDan);
         updateAdapterByDay(danasnjiDan);
 
@@ -143,5 +145,31 @@ public class MyScheduleFragment extends Fragment
         lectureAdapter.setLectureList(lectureList);
         lectureAdapter.notifyDataSetChanged();
     }
+
+    private DAY getCurrentDay(){
+
+        Calendar cal = Calendar.getInstance();
+        switch (cal.get(Calendar.DAY_OF_WEEK)){
+            case(1):{
+                return DAY.PON;
+            }
+            case(2):{
+                return DAY.UTO;
+            }
+            case(3):{
+                return DAY.SRE;
+            }
+            case(4):{
+                return DAY.ČET;
+            }
+            case(5):{
+                return DAY.PET;
+            }
+            default:{
+                return DAY.PON;
+            }
+        }
+    }
+
 
 }
