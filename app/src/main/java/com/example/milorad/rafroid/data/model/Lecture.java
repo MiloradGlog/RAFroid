@@ -1,5 +1,6 @@
 package com.example.milorad.rafroid.data.model;
 
+import android.support.annotation.NonNull;
 import android.support.v7.widget.util.SortedListAdapterCallback;
 
 import java.util.ArrayList;

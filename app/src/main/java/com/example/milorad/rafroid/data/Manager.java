@@ -15,6 +15,8 @@ import com.example.milorad.rafroid.data.model.Subject;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Created by Milorad on 6/2/2018.
@@ -104,6 +106,14 @@ public class Manager {
         for (Lecture l : lectures){
             if (l.hasGroup(group.getName()) && l.hasDay(day.toString())) list.add(l);
         }
+
+        Collections.sort(list, new Comparator<Lecture>() {
+            @Override
+            public int compare(Lecture o1, Lecture o2) {
+                return o1.getStartTime().substring(0,2).compareToIgnoreCase(o2.getStartTime().substring(0, 2));
+            }
+        });
+
         return list;
     }
 
