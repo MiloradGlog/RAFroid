@@ -74,8 +74,8 @@ public class SearchFragment extends Fragment implements AdapterView.OnItemSelect
             }
         });
 
-        ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(getContext(), R.array.vrstaPretrage, android.R.layout.simple_spinner_item);
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(getContext(), R.array.vrstaPretrage, R.layout.spinner_item);
+        arrayAdapter.setDropDownViewResource(R.layout.spinner_item);
         dropdownMenu.setAdapter(arrayAdapter);
         dropdownMenu.setOnItemSelectedListener(this);
 
