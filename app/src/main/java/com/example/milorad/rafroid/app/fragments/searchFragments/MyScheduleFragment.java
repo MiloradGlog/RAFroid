@@ -9,6 +9,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +55,9 @@ public class MyScheduleFragment extends Fragment
 
         DAY danasnjiDan = getCurrentDay();
 
-        updateButtons(tueButton, danasnjiDan);
+        Log.d("GOVNO", danasnjiDan.toString());
+
+        updateButtons(getCurrentDayButton(), danasnjiDan);
         updateAdapterByDay(danasnjiDan);
 
         return view;
@@ -149,23 +152,48 @@ public class MyScheduleFragment extends Fragment
 
         Calendar cal = Calendar.getInstance();
         switch (cal.get(Calendar.DAY_OF_WEEK)){
-            case(1):{
+            case(2):{
                 return DAY.PON;
             }
-            case(2):{
+            case(3):{
                 return DAY.UTO;
             }
-            case(3):{
+            case(4):{
                 return DAY.SRE;
             }
-            case(4):{
+            case(5):{
                 return DAY.ČET;
             }
-            case(5):{
+            case(6):{
                 return DAY.PET;
             }
             default:{
                 return DAY.PON;
+            }
+        }
+    }
+
+    private AppCompatButton getCurrentDayButton(){
+
+        Calendar cal = Calendar.getInstance();
+        switch (cal.get(Calendar.DAY_OF_WEEK)){
+            case(2):{
+                return monButton;
+            }
+            case(3):{
+                return tueButton;
+            }
+            case(4):{
+                return wedButton;
+            }
+            case(5):{
+                return thuButton;
+            }
+            case(6):{
+                return friButton;
+            }
+            default:{
+                return monButton;
             }
         }
     }
