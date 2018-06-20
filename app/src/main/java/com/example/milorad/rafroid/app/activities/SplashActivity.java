@@ -28,6 +28,7 @@ public class SplashActivity extends AppCompatActivity {
     public static final String NEWS_TAG = "NEWS_JSON";
     public static final String CONSULT_TAG = "CONSULT_JSON";
     public static final String EXAMS_TAG = "EXAMS_JSON";
+    public static final String SUCCESS_TAG = "SUCCESS";
 
     public static final String API_KEY = "26diE3vAjShIjpT1ccUD";
     public static final String CLASS_URL = "https://api.raf.ninja/v1/classes";
@@ -120,6 +121,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call call, IOException e) {
                 Log.d("TESTURL:", "Usao u onFailiure classes");
+                sendIntentFail();
             }
 
             @Override
@@ -151,6 +153,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call call, IOException e) {
                 Log.d("TESTURL:", "Usao u onFailiure news");
+                sendIntentFail();
             }
 
             @Override
@@ -182,6 +185,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call call, IOException e) {
                 Log.d("TESTURL:", "Usao u onFailiure consult");
+                sendIntentFail();
             }
 
             @Override
@@ -216,6 +220,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call call, IOException e) {
                 Log.d("TESTURL:", "Usao u onFailiure exam");
+                sendIntentFail();
             }
 
             @Override
@@ -226,13 +231,14 @@ public class SplashActivity extends AppCompatActivity {
                 Log.d("TESTURL:", "Usao u onSuccess exam");
 
 
-                sendIntent();
+                sendIntentSuccess();
             }
         });
 
     }
 
-    private void sendIntent(){
+    private void sendIntentSuccess(){
+        intent.putExtra(SUCCESS_TAG, true);
         intent.putExtra(CLASS_TAG, classesJSON);
         intent.putExtra(NEWS_TAG, newsJSON);
         intent.putExtra(CONSULT_TAG, consultationsJSON);
@@ -241,4 +247,11 @@ public class SplashActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+    private void sendIntentFail(){
+        intent.putExtra(SUCCESS_TAG, false);
+        finish();
+
+        startActivity(intent);
+    }
 }
+

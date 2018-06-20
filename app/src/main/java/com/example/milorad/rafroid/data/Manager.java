@@ -1,6 +1,8 @@
 package com.example.milorad.rafroid.data;
 
+import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.example.milorad.rafroid.data.model.Classroom;
 import com.example.milorad.rafroid.data.model.Consultation;
@@ -13,6 +15,16 @@ import com.example.milorad.rafroid.data.model.Lecturer;
 import com.example.milorad.rafroid.data.model.NewsModel;
 import com.example.milorad.rafroid.data.model.Subject;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.io.StreamCorruptedException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,7 +37,7 @@ import java.util.Comparator;
  *
  */
 
-public class Manager {
+public class Manager{
 
     public static final String PREFERENCES_NAME = "MY_PREFERENCES";
     public static final String PREFERENCE_FIRST_TIME_KEY = "FIRST_TIME_KEY";
@@ -301,7 +313,6 @@ public class Manager {
         Log.e("getLecturerBy ERROR", "NOT FOUND");
         return null;
     }
-
 
 
     /*
