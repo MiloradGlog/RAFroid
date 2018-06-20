@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.milorad.rafroid.R;
 import com.example.milorad.rafroid.app.adapters.SectionsPageAdapter;
@@ -33,6 +34,13 @@ public class SearchMainFragment extends Fragment
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private Toolbar toolbar;
     private View viewGlobal;
+
+    //IKONICE ZA FRAGMENTE KOJI SE NALAZE DOLE U RASPOREDU
+    private ImageView myScheduleIcon;
+    private ImageView searchScheduleIcon;
+    private ImageView examIcon;
+    private ImageView currIcon;
+    //----------------------------------------------------
 
     private static final String DEBUG_TAG = "TESTIRAM";
 
@@ -61,18 +69,73 @@ public class SearchMainFragment extends Fragment
 
         mSectionsPageAdapter = new SectionsPageAdapter(getChildFragmentManager());
         setupViewPager(mviewPager);
+
         TabLayout tabLayout = (TabLayout) viewGlobal.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mviewPager);
+
+        tabLayout.getTabAt(0).setCustomView(R.layout.fragment0_item);
+        tabLayout.getTabAt(1).setCustomView(R.layout.fragment1_item);
+        tabLayout.getTabAt(2).setCustomView(R.layout.fragment2_item);
+        tabLayout.getTabAt(3).setCustomView(R.layout.fragment3_item);
+
+        myScheduleIcon = viewGlobal.findViewById(R.id.scheduleIcon);
+        searchScheduleIcon = viewGlobal.findViewById(R.id.searchScheduleIcon);
+        examIcon = viewGlobal.findViewById(R.id.examIcon);
+        currIcon = viewGlobal.findViewById(R.id.currIcon);
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                switch (tab.getPosition()){
+                    case 0:
+                        myScheduleIcon.setImageResource(R.drawable.ic_myscheduleselected);
+                        break;
+                    case 1:
+                        searchScheduleIcon.setImageResource(R.drawable.ic_searchscheduleselected);
+                        break;
+                    case 2:
+                        examIcon.setImageResource(R.drawable.ic_examselected);
+                        break;
+                    case 3:
+                        currIcon.setImageResource(R.drawable.ic_currselected);
+                        break;
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                switch (tab.getPosition()){
+                    case 0:
+                        myScheduleIcon.setImageResource(R.drawable.ic_myschedule);
+                        break;
+                    case 1:
+                        searchScheduleIcon.setImageResource(R.drawable.ic_searchschedule);
+                        break;
+                    case 2:
+                        examIcon.setImageResource(R.drawable.ic_exam);
+                        break;
+                    case 3:
+                        currIcon.setImageResource(R.drawable.ic_curr);
+                        break;
+                }
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
     }
 
 
     private void setupViewPager(ViewPager viewPager)
     {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getChildFragmentManager());
-        adapter.addFragment(new MyScheduleFragment(), "Moj raspored");
-        adapter.addFragment(new SearchFragment(), "Pretraga Rasporeda");
-        adapter.addFragment(new ExamFragment(), "Ispiti");
-        adapter.addFragment(new CurrFragment(), "Kolokvijumi");
+        adapter.addFragment(new MyScheduleFragment(), null);
+        adapter.addFragment(new SearchFragment(), null);
+        adapter.addFragment(new ExamFragment(), null);
+        adapter.addFragment(new CurrFragment(), null);
+
         viewPager.setAdapter(adapter);
     }
 

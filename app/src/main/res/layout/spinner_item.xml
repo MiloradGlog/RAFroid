@@ -8,6 +8,6 @@
     android:fontFamily="@font/nunito_regular"
     android:background="@color/colorPrimary"
     android:gravity="left"
-    android:textColor="@color/white"
-    android:padding="5dip"
+    android:textColor="@color/itemBackground"
+    android:padding="5dp"
     />

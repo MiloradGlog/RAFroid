@@ -57,7 +57,6 @@ public class MyScheduleFragment extends Fragment
         updateButtons(tueButton, danasnjiDan);
         updateAdapterByDay(danasnjiDan);
 
-
         return view;
     }
 

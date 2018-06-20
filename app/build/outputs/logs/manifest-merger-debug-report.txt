@@ -57,7 +57,7 @@ MERGED from [com.bignerdranch.android:expandablerecyclerview:1.0.3] C:\Users\Maz
 	android:roundIcon
 		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:9:9-49
 	android:allowBackup
 		ADDED from F:\AndroidProjects\RAFroid\RAFroid\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
